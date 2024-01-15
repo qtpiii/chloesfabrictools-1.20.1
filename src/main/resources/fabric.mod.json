@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "chloe-fabric-tools",
+	"version": "${version}",
+	"name": "Chloe's Fabric Tools",
+	"description": "A fabric-compatible, vanilla styled tool overhaul mod.",
+	"authors": [
+		"qtpi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chloe-fabric-tools/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.qtpi.chloefabrictools.ChloeFabricTools"
+		],
+		"client": [
+			"net.qtpi.chloefabrictools.ChloeFabricToolsClient"
+		],
+		"fabric-datagen": [
+			"net.qtpi.chloefabrictools.ChloeFabricToolsDataGenerator"
+		]
+	},
+	"mixins": [
+		"chloe-fabric-tools.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
