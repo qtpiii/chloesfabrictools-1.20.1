@@ -11,10 +11,9 @@ import net.minecraft.util.Identifier;
 import net.qtpi.chloefabrictools.ChloeFabricTools;
 
 public class ModItems {
-
     public static final Item FOURLEAFCLOVER = registerItem("fourleafclover", new Item(new FabricItemSettings()));
 
-    private static void addItemstoIngredientTabItemGroup(FabricItemGroupEntries entries) {
+    private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(FOURLEAFCLOVER);
     }
 
@@ -25,7 +24,7 @@ public class ModItems {
     public static void registerModItems() {
         ChloeFabricTools.LOGGER.info("Registering Mod Items for " + ChloeFabricTools.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemstoIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
 
     }
 }
