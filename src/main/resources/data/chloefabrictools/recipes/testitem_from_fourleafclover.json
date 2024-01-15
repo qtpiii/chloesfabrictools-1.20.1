@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "chloefabrictools:fourleafclover"
+    }
+  ],
+  "result": {
+    "item": "chloefabrictools:testitem",
+    "count": 4
+  }
+}

@@ -11,10 +11,10 @@ import net.minecraft.util.Identifier;
 import net.qtpi.chloefabrictools.ChloeFabricTools;
 
 public class ModItems {
-    public static final Item FOURLEAFCLOVER = registerItem("fourleafclover", new Item(new FabricItemSettings()));
+    public static final Item TESTITEM = registerItem("testitem", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(FOURLEAFCLOVER);
+        entries.add(TESTITEM);
     }
 
     private static Item registerItem(String name, Item item) {
